@@ -1,4 +1,5 @@
-module.exports = {
+{
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "es2021": true,
@@ -20,16 +21,12 @@ module.exports = {
     "plugins": [
         "import",
         "react",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "rules": {
-        "indent":[
-            "error",
-            4
-        ],
-        "no-unused-vars": 1,
-        "no-use-before-define": 1,
-        "no-redeclare": 1,
-        "no-console":0,
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "prettier/prettier": "error"
     }
 };
